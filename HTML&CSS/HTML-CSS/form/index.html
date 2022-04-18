@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+    <!-- action tells server what to do with this form -->
+    <!-- <form action=""></form> -->
+
+    <form>
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username" placeholder="username" required>
+        <br><br>
+        <label for="email">Enter Email:</label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <br><br>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+    
+        <p>Select your age:</p>
+
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2">26-50</label>
+        <input type="radio" name="age" value="50+" id="option-3">
+        <label for="option-3">50+</label>
+
+        <br><br>
+
+        <label for="">Security Question:</label>
+        <select name="question" id="question">
+            <option value="q1">What colour are your favourite pair of socks?</option>
+            <option value="q2">What is favourite game?</option>
+            <option value="q1">What is your best ever security question?</option>
+        </select>
+
+        <br><br>
+
+        <label for="answer">Security Answer:</label>
+        <input type="text" id="answer" name="answer">
+        
+        <br><br>
+
+        <label for="bio">Your Bio:</label>
+        <br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+        
+        <br>
+        <input type="submit" value="Submit the form">
+
+    </form>
+    <footer>
+        <hr>
+       <p class="last">Written and coded by <a href="https://github.com/Pleexus">Pleexus</a>.</p>
+    </footer>
+
+</body>
+</html>

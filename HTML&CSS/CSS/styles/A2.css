@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(211, 243, 255);
+    color: #000;
+}
+
+h2{
+    text-decoration: line-through;
+}
+h3{
+    text-decoration: underline;
+}
+
+.grey{
+    background-color: rgb(128, 148, 170);
+}
+.grey p{
+ 
+    background-color: rgb(196, 238, 255) ;
+}

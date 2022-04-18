@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [14/Mar/2022:01:03:38 +0530] "GET /Validation/registration HTTP/1.1" 200 1516 http-bio-8080-exec-1 1163
+0:0:0:0:0:0:0:1 - - [14/Mar/2022:01:03:45 +0530] "POST /Validation/validation.html HTTP/1.1" 200 133 http-bio-8080-exec-2 38
