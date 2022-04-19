@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <h2>{{header}}</h2>
+
+    <form (ngSubmit)="onSubmit(localform)" #localform="ngForm">
+        <div class="form-group">
+            <label for="">Id</label>
+            <input type="text" class="form-control" [ngModel]="ad.id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="">Title</label>
+            <input type="text" class="form-control" [ngModel]="ad.title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" [ngModel]="ad.name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="">Category</label>
+            <!-- <div class="dropdown">
+                <button  class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{selected}}
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <button *ngFor="let category of categorys" (click)="onSelect(category)" class="dropdown-item" href="#">{{category}}</button>
+                </div>
+            </div> -->
+            <select class="form-select" aria-label="Default select example" [ngModel]="ad.category" name="category">
+                <option *ngFor="let category of categorys">{{category}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="">Description</label>
+            <input type="text" class="form-control" [ngModel]="ad.description" name="description">
+        </div>
+        <br>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </form>
+</div>

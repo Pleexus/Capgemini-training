@@ -1,0 +1,29 @@
+<H2>Admin Tab</H2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Restaurant Name</th>
+        <th scope="col">Menu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of restmenu| keyvalue" routerLink="/order/{{r.key}}">
+        <td>{{r.key}}</td>
+        <td>{{r.value}}</td>
+      </tr>
+    </tbody>
+</table>
+<br>
+<div class="d-flex justify-content-center">
+    <h2 #left>Add New Restaurant </h2>
+    <input type="text" [(ngModel)]="name" >
+    <button type="button" class="btn btn-outline-success btn-sm" (click) =" addrest(name)">Add</button>
+</div>
+    <br>
+<div class="d-flex justify-content-center">
+    <h2 #left >Delete Restaurant </h2>
+    <select id="items"  [(ngModel)]="item"  >
+    <option *ngFor=" let r of restmenu | keyvalue" value="{{r.key}}">{{r.key}}</option>
+    </select>
+    <button type="button" class="btn btn-outline-danger btn-sm" (click)=" Deletefrommap(item)">Delete</button>
+</div>
